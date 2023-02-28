@@ -4,6 +4,7 @@ import "./style.css";
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { Ground } from "./Ground";
 import { Car } from "./Car";
+import { Rings } from "./Rings";
 
 function CarShow() {
   return (
@@ -15,7 +16,7 @@ function CarShow() {
       {/* let color = new Color(0, 0, 0)*/}
       <color args={[0, 0, 0]} attach="background" />
       <Car />
-
+      <Rings />
        {/*
          let spotLight = new SpotLight();
           spotLight.intensity = 1.5;
